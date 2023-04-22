@@ -159,7 +159,7 @@ body
     margin-left: 20px;
 }
 */
-/*-- CARD --*/
+/*-- CARD- --*/
 
 .Card image cap
 {
@@ -170,7 +170,7 @@ body
 .card
 {
     font-size: 20px;
-    font-weight: 600px;
+
     margin-top: 8%;
     margin-left: auto;
     margin-right: auto;
@@ -180,17 +180,22 @@ body
 
 
 /*-- seccion "REDES SOCIALES" --*/
-
+/*
 #social-media
 {
     background-color: #f8f9fa;
     padding: 100px 0;
 }
+*/
+#social-media
+{
+    background-color: #f8f9fa;
+    padding: 4% 0;
+}
 
 #social-media p
 {
     font-size: 30px;
-    font-weight: 600px;
     margin-bottom: 30px;
 }
 
@@ -232,8 +237,6 @@ body
 {
     padding: 20px;
 }
-
-
 
 .footer-box .fa
 {

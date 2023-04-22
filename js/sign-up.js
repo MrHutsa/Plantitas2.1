@@ -1,4 +1,9 @@
 
+/*
+<font-awesome-icon ico:icon="['fab', 'instagram']" bounce />
+*/
+
+
 console.log("hola")
 // Nombre Completo
 
@@ -14,7 +19,7 @@ miInput.addEventListener('input', () => {
 
 // Muestra el mensaje de validación
 miInput.addEventListener('invalid', () => {
-    miInput.setCustomValidity('Si no es molesta... ¿me dices tu nombre?');
+    miInput.setCustomValidity('Si no es molestia... ¿me dices tu nombre?');
 });
 
 // Nombre Usuario
@@ -68,3 +73,4 @@ miTelefono.addEventListener('input', () => {
 miTelefono.addEventListener('invalid', () => {
     miTelefono.setCustomValidity('No es un número');
 });
+
