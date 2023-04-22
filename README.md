@@ -9,7 +9,7 @@ Seccion PROGRAMACION WEB_009D
 
 
 
-versión 1.2.6,1
+versión 1.2.6.1
 
 cambios:
 
