@@ -183,12 +183,12 @@ h2
     text-decoration: underline;
 }
 
-.button-container
+.button-box
 {
     margin: 15px 0;
 }
 
-.button-container button
+.button-box button
 {
     width: 100%;
     margin-top: 10px;
@@ -201,6 +201,11 @@ h2
     background-image: linear-gradient(to right, #aa076b, #61045f);
 
 }
+
+
+  
+
+
 
 /*
 .button-container button:hover
