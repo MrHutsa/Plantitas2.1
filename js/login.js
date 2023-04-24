@@ -1,7 +1,7 @@
 // JQUERY
 
 
-// Obtener los elementos del formulari
+// Obtener los elementos del formulario
 const email = document.getElementById('typePasswordX');
 const password = document.getElementById('typePasswordX');
 
