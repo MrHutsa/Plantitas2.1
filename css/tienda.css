@@ -52,7 +52,6 @@ body
     outline: none !important;
 }
 
-
 /*-- banner + texto + imagen --*/
 
 #banner
@@ -98,25 +97,18 @@ body
 }
 
 
-/*-- seccion "REDES SOCIALES"- --*/
+/*-- seccion "REDES SOCIALES" --*/
 
 #social-media
 {
     background-color: #f8f9fa;
-    padding: 4% 0;
+    padding: 100px 0;
 }
-/*
-#social-media p
-{
-    font-size: 30px;
-    font-weight: 600px;
-    margin-bottom: 30px;
-}
-*/
 
 #social-media p
 {
     font-size: 30px;
+    font-weight: 600px;
     margin-bottom: 30px;
 }
 
@@ -158,6 +150,8 @@ body
 {
     padding: 20px;
 }
+
+
 
 .footer-box .fa
 {
