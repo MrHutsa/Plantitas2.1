@@ -1,3 +1,9 @@
+
+.btn-login
+{
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+
 .gradient-custom {
     /* fallback for old browsers */
     background: #b5cc6a;

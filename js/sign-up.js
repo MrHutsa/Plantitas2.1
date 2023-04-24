@@ -1,5 +1,96 @@
 
+// Obtener los elementos del formulario
+const formulario = document.getElementById('registro-form');
+const nombre = document.getElementById('nombre');
+const usuario = document.getElementById('usuario');
+const email = document.getElementById('email');
+const telefono = document.getElementById('telefono');
+const contraseña = document.getElementById('contraseña');
+const confirmeContraseña = document.getElementById('confirmeContraseña');
 
+// Agregar el evento 'submit' al formulario
+formulario.addEventListener('submit', function(event) {
+  // Evitar que el formulario se envíe automáticamente
+  event.preventDefault();
+
+  // Validar los campos del formulario
+  if (nombre.value === '') {
+    alert('Por favor, ingrese su nombre completo.');
+    nombre.focus();
+    return;
+  }
+
+  if (usuario.value === '') {
+    alert('Por favor, ingrese un nombre de usuario.');
+    usuario.focus();
+    return;
+  }
+
+  if (!usuario.checkValidity()) {
+    alert('El nombre de usuario debe tener al menos 4 caracteres y contener solo letras y números.');
+    usuario.focus();
+    return;
+  }
+
+  if (email.value === '') {
+    alert('Por favor, ingrese su dirección de correo electrónico.');
+    email.focus();
+    return;
+  }
+
+  if (!email.checkValidity()) {
+    alert('Por favor, ingrese una dirección de correo electrónico válida.');
+    email.focus();
+    return;
+  }
+
+  if (telefono.value === '') {
+    alert('Por favor, ingrese su número telefónico.');
+    telefono.focus();
+    return;
+  }
+
+  if (!telefono.checkValidity()) {
+    alert('Por favor, ingrese un número telefónico válido (ejemplo: 111-222-333).');
+    telefono.focus();
+    return;
+  }
+
+  if (contraseña.value === '') {
+    alert('Por favor, ingrese una contraseña.');
+    contraseña.focus();
+    return;
+  }
+
+  if (contraseña.value.length < 8) {
+    alert('La contraseña debe tener al menos 8 caracteres.');
+    contraseña.focus();
+    return;
+  }
+
+  if (confirmeContraseña.value === '') {
+    alert('Por favor, confirme su contraseña.');
+    confirmeContraseña.focus();
+    return;
+  }
+
+  if (confirmeContraseña.value !== contraseña.value) {
+    alert('Las contraseñas no coinciden. Por favor, inténtelo de nuevo.');
+    confirmeContraseña.focus();
+    return;
+  }
+
+  // Si todos los campos son válidos, enviar el formulario
+  formulario.submit();
+  window.location.href = "../index.html";
+});
+
+
+
+
+
+
+/*
 document.getElementById("registro-form").addEventListener("submit", function(event) {
     // Detener el envío del formulario para validación manual
     event.preventDefault();
@@ -18,7 +109,7 @@ document.getElementById("registro-form").addEventListener("submit", function(eve
     if (nombre.trim() === "") {
       errores.push("Debe ingresar su nombre completo.");
     }
-    if (usuario.trim() === "") {
+    if (nombreUsuario.trim() === "") {
       errores.push("Debe ingresar un nombre de usuario.");
     } else if (!/^[a-zA-Z0-9]{4,}$/.test(usuario)) {
       errores.push("El nombre de usuario debe contener al menos 4 caracteres alfanuméricos.");
@@ -40,9 +131,6 @@ document.getElementById("registro-form").addEventListener("submit", function(eve
       errores.push("Debe confirmar su contraseña.");
     } else if (confirmeContraseña !== contraseña) {
       errores.push("Las contraseñas no coinciden.");
-    }
-    if (!genero) {
-      errores.push("Debe seleccionar su género.");
     }
   
     // Mostrar errores o enviar formulario
@@ -69,21 +157,7 @@ document.getElementById("registro-form").addEventListener("submit", function(eve
     window.location.href = 'index.html';
     });
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  */
 
 
 
