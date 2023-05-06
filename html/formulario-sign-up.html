@@ -57,75 +57,44 @@
             </nav>
         </section>
 
-        <!-- FORMULARIO -->
+        <!-- FORMULARIO- -->
 
-        <section>
+        <section class="container mr-5 pr-5">
             <div class="container-form">
-                <form action="" method="post">
+                <form action="#" method="post" id="registro-form">
                     <h2>Registro</h2>
                     <div class="content">
                           <!-- Nombre Completo -->
                         <div class="input-box">
                             <label for="nombre">Nombre Completo</label>
-                            <input type="text" placeholder="Nombre completo" name="nombre" id="nombre" required autocomplete="off">
+                            <input type="text" placeholder="Nombre completo" name="nombre" id="nombre" >
                         </div>
                          <!-- Nombre Usuario -->
                         <div class="input-box">
                             <label for="nombreUsuario">Nombre Usuario</label>
-                            <input type="text" placeholder="Ingrese usuario" name="usuario" id="usuario" required pattern="^[a-zA-Z0-9]{4,}$" autocomplete="off">
+                            <input type="text" placeholder="Ingrese usuario" name="usuario" id="usuario" >
                         </div>
                          <!-- Email -->
                         <div class="input-box">
                             <label for="email">Email</label>
-                            <input type="email" placeholder="Ingrese Email" name="email" id="email" required autocomplete="off">
+                            <input type="email" placeholder="Ingrese Email" name="email" id="email" >
                         </div>
                          <!-- Numero Telefonico -->
                         <div class="input-box">
                             <label for="telefono">Numero Telefonico</label>
-                            <input type="tel" placeholder="Ej: 111-222-333" name="telefono" id="telefono" required pattern="[0-9]{3}[0-9]{3}[0-9]{3}" autocomplete="off">
+                            <input type="tel" placeholder="Ej: 111-222-333" name="telefono" id="telefono" >
                         </div>
                          <!-- Contraseña -->
                         <div class="input-box">
                             <label for="contraseña">Contraseña</label>
-                            <input type="password" placeholder="Ingrese contraseña" name="contraseña" id="contraseña" required autocomplete="off">
+                            <input type="password" placeholder="Ingrese contraseña" name="contraseña" id="contraseña" >
                         </div>
                          <!-- Confirme su Contraseña -->
                         <div class="input-box">
                             <label for="Ccontraseña">Confirme su Contraseña</label>
-                            <input type="password" placeholder="Confirme contraseña" name="confirmeContraseña" id="confirmeContraseña" required autocomplete="off">
+                            <input type="password" placeholder="Confirme contraseña" name="confirmeContraseña" id="confirmeContraseña" >
                         </div>
-                         <!-- Genero -->
-                        <!--
-                        <span class="titulo-genero">Genero</span>
-                        <div class="categoria-genero">
 
-                            <input type="radio" name="genero" id="masculino" required>
-                            <label for="genero">Hombre</label>
-
-                            <input type="radio" name="genero" id="femenino" required>
-                            <label for="genero">Mujer</label>
-
-                            <input type="radio" name="genero" id="otro" required>
-                            <label for="genero">Otro</label>
-
-                        </div>
-                        </select>
--->
-                        <fieldset>
-                            <legend>Género:</legend>
-                            <label>
-                                <input type="radio" name="genero" id="masculino" required>
-                            Hombre
-                            </label>
-                            <label>
-                                <input type="radio" name="genero" id="femenino" required>
-                            Mujer
-                            </label>
-                            <label>
-                                <input type="radio" name="genero" id="otro" required>
-                            Otro
-                            </label>
-                        </fieldset>
 
                      <!-- Terminos de Uso -->
 
@@ -137,10 +106,11 @@
                             <a href="#">Política de cookies.</a>
                             Puede recibir notificaciones por SMS de nosotros y puede optar por no participar en cualquier momento.</p>
                     </div>
+
                     <div class="button-container">
-                        <form method="get" action="../index.html">
+
                           <button type="submit">Registrarse</button>
-                        </form>
+ 
                     </div>
                 </form>
             </div>
@@ -152,16 +122,16 @@
 
         <section id="social-media">
             <div class="container text-center">     
-                <p>ENCUENTRANOS EN NUESTRAS REDES SOCIALES</p>
-        
-            <div class="iconos-social d-flex justify-content-center text-center mt-4 pt-1">
+              <p>ENCUENTRANOS EN NUESTRAS REDES SOCIALES</p>
+              <div class="iconos-social d-flex justify-content-center text-center mt-4 pt-1 mb-4">
                 <a href="https://www.instagram.com/"><i class="ico fa-brands fa-instagram" style="color: #a9bd68;"></i></a>
                 <a href="https://es-la.facebook.com/"><i class="ico fa-brands fa-facebook" style="color: #a9bd68;"></i></a>
                 <a href="https://twitter.com/"><i class="ico fab fa-twitter" style="color: #a9bd68;"></i></a>
                 <a href="https://www.whatsapp.com/"><i class="ico fa-brands fa-whatsapp" style="color: #a9bd68;"></i></a>
-            </div>        
+              </div>        
             </div>
-        </section>
+          </section>
+          
 <!--
         <section id="social-media">
             <div class="container text-center">
@@ -176,23 +146,43 @@
             </div>
         </section>
 -->
-        <!-- seccion footer = pie de pagina -->
+<!-- seccion footer = pie de pagina -->
 
-        <section id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 footer-box">
+<section id="footer">
+    <div class="container">
+    <div class="row">
+        <div class="col-md-4 footer-box">
+    
+            <p><b>INFORMACIÓN</b></p>
+            <p>Seguimiento de pedido</P>
+            <p>Política de despachos</P>
+            <p>Contáctanos</P>
+            <p>Devoluciones</P>
+            <p>Preguntas Frecuentes</P>
+            <p>Políticas y Privacidad</P>
+            <p>Término y Servicios</P>
+            <p>Términos del Servicio</P>
+            <p>Política de reembolso</P>
+        </div>  
+    
+        <div class="col-md-4 footer-box">
+            <p><b>CONTACTO</b></p>
+            <P><i class="fa fa-map-marker" aria-hidden="true"></i>  Avenida Siempre Viva 123</P>
+            <p><i class="fa fa-phone" aria-hidden="true"></i>  FONO: +569111222333</p>
+            <P><i class="fa fa-envelope-o" aria-hidden="true"></i>  plantitas@gmail.com</P>
+        </div>
+    
+        <div class="col-md-4 footer-box">
+            <p><b>¡REGÍSTRATE Y RECIBE INFORMACIÓN!</b></p>
+            <input type="email" class="form-control" placeholder="Registrate!">
+            <button type="button" class="btn btn-primary">Subscríbete!</button>
+        </div>
+    </div>
+        <hr>
+        <p class="copyright">Sitio Web creado por Hutsa</p>
+    </div>
+    </section>
 
-                        <p>
-                            <b>INFORMACIÓN</b>
-                        </p>
-                        <p></p>
-                    </i>Seguimiento de pedido</P>
-                <p></p>
-            </i>Política de despachos</P>
-        <p></p>
-    </body>
-</html></i>Contáctanos</P><p></p></i>Devoluciones</P><p></p></i>Preguntas Frecuentes</P><p></p></i>Políticas y Privacidad</P><p></p></i>Término y Servicios</P> <p></p></i>Términos del Servicio</P><p></p></i>Política de reembolso</P></div><div class="col-md-4 footer-box"><p><b>CONTACTO</b></p><P><i class="fa fa-map-marker" aria-hidden="true"></i>Avenida Siempre Viva 123</P><p><i class="fa fa-phone" aria-hidden="true"></i>FONO: +569111222333</p><P><i class="fa fa-envelope-o" aria-hidden="true"></i>plantitas@gmail.com</P></div><div class="col-md-4 footer-box"><p><b>¡REGÍSTRATE Y RECIBE INFORMACIÓN!</b></p><input type="email" class="form-control" placeholder="Registrate!"><button type="button" class="btn btn-primary">Subscríbete!</button></div></div><hr><p class="copyright">Sitio Web creado por Hutsa</p></div></section>
 <!-- Smooth Scroll -->
 <script src="js/smooth-scroll.js" alt="smooth-scroll"></script><script>var scroll = new SmoothScroll('a[href*="#"]');</script>
 <!-- jquery -->
