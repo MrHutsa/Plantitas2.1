@@ -22,6 +22,7 @@ const telefono = telefonoInput.value.trim();
 const contraseña = contraseñaInput.value.trim();
 const confirmeContraseña = confirmeContraseñaInput.value.trim();
 
+
 // NOMBRE
 if (nombre === '') {
   if (!nombreInput.classList.contains('error')) {
@@ -109,6 +110,11 @@ if (contraseña === '') {
   }
 }
 
+function validarContraseña(contraseña) {
+  const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+  return regex.test(contraseña);
+}
+
 // CONFIRME CONTRASEÑA
 if (confirmeContraseña === '') {
   if (!confirmeContraseñaInput.classList.contains('error')) {
@@ -126,12 +132,6 @@ if (confirmeContraseña === '') {
   if (mensajeIntrusivo) {
     mensajeIntrusivo.remove();
   }
-}
-
-
-function validarContraseña(contraseña) {
-  const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-  return regex.test(contraseña);
 }
 
 // Verificar si todos los campos son válidos
