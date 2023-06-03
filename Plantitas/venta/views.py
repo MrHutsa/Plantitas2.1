@@ -145,6 +145,10 @@ def tienda(request):
 
     especies_totales = especies_rosa + especies_spreading + especies_Christmastree + especies_cannabis + especies_clover + especies_Indian
 
-
+    for especie in especies_totales:
+        especie["precio"] = generate_random_price()
 
     return render(request, "venta/tienda.html", {"especies_totales": especies_totales})
+
+def generate_random_price():
+    return random.randint(10000, 50000)
