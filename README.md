@@ -1,6 +1,5 @@
 # Plantitas
 
-Primera Entrega
 
 Vladimir Chamorro Aedo
 
