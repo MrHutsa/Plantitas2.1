@@ -80,6 +80,11 @@
     transform: translateY(-1000px);
 }
 
+.iconos-social
+{
+    padding-bottom: 2%;
+}
+
 .iconos-social img
 {
     margin-left: 20px;

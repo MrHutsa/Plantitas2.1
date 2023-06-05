@@ -156,15 +156,16 @@ h2
 }
 
 /*-- seccion "REDES SOCIALES" --*/
-.container
-{
-    margin-top: none;
+
+#social-media {
+    background-color: #f8f9fa;
 }
 
-#social-media
+#social-media p
 {
-    background-color: #f8f9fa;
+    font-size: 30px;
 
+    margin-bottom: 30px;
 }
 
 .ico
@@ -180,11 +181,15 @@ h2
     transform: translateY(-1000px);
 }
 
+.iconos-social
+{
+    padding-bottom: 2%;
+}
+
 .iconos-social img
 {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 4%;
     width: 8%;
     transition: 0.5s;
 }
@@ -192,60 +197,4 @@ h2
 .iconos-social a:hover img
 {
     transform: translateY(-10px);
-}
-
-/*-- pie de pagina --*/
-
-#footer
-{
-    background-image: linear-gradient(to right, #c0de5d,#b5cc6a,#a9bd68 , #99a66d,#6da67a);
-    color: #fff;
-}
-
-.footer-box
-{
-    padding: 20px;
-}
-
-.footer-box .fa
-{
-    margin-right: 8px;
-    font-size: 25px;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    padding-top: 7px;
-    border-radius: 2px;
-    background-image: linear-gradient(to right, #a517ba, #5f1782);
-}
-
-.footer-box .form-control
-{
-    box-shadow: none !important;
-    border: none;
-    border-radius: 0;
-    margin-top: 25px;
-    max-width: 250px;
-
-}
-
-.footer-box .btn-primary
-{
-    box-shadow: none !important;
-    border: none;
-    border-radius: 0;
-    margin-top: 15px;
-    background-image: linear-gradient(to right, #a517ba, #5f1782);
-}
-
-hr
-{
-    background-color: #fff;
-}
-
-.copyright
-{
-    margin-bottom: 0;
-    padding-bottom: 20px;
-    text-align: center;
 }
