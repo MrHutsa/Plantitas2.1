@@ -16,67 +16,8 @@ def sign(request):
 def login(request):    
     return render(request, 'venta/formulario-login.html')
 
-# def tienda(request):
-#     # Obtén el token de la API de Trefle
-#     trefle_api_token = "Sr5y3wPL13rMLu5U4TGYAT-AK8R1ILIHckPS3NbQ2Fs"
-    
-#     # URL de la solicitud
-#     url = "https://trefle.io/api/v1/species/search"
-    
-#     # Parámetros de la solicitud
-#     rosa = {
-#         "q": "Rosa chinensis",
-#         "limit": 1
-#     }
 
-#     spreading = {
-#         "q": "Spreading hedgeparsley",
-#         "limit": 1
-#     }    
-    
-#     # Encabezados de la solicitud
-#     headers = {
-#         "Authorization": f"Bearer {trefle_api_token}"
-#     }
-    
-#     # Realiza la solicitud GET a la API de Trefle
-#     response_rosa = requests.get(url, params=rosa, headers=headers)
-#     response_spreading = requests.get(url, params=spreading, headers=headers)   
 
-#     # Obtén los datos de la respuesta en formato JSON
-#     data_rosa = response_rosa.json()
-#     data_spreading = response_spreading.json()
-#     contexto = {'data_rosa': data_rosa, 'data_spreading': data_spreading,}  # Crea un diccionario de contexto con los datos
-
-# # rosa #   
-#         # Selecciona la primera especie de rosa de los resultados
-#     if data_rosa["data"]:
-        
-#         # Obtén los datos de la primera especie de rosa de los resultados
-#         rosa = data_rosa["data"][0]
-#         print(rosa)
-
-#         rosaId = rosa["id"]
-#         print(rosaId)        
-#         rosaNom = rosa["common_name"]
-#         rosaImg = rosa["image_url"]
-#         print(rosaImg)
-
-#     elif data_spreading["data"]:
-        
-#         # Obtén los datos de la primera especie de spreading de los resultados
-#         spreading = data_spreading["data"][0]
-#         spreadingId = spreading["id"]      
-#         spreadingNom = spreading["common_name"]
-#         spreadingImg = spreading["image_url"]   
-
-#         data = ({"rosaId": rosaId, "rosaNom": rosaNom, "rosaImg": rosaImg, "spreadingId": spreadingId, "spreadingNom": spreadingNom, "spreadingImg": spreadingImg})
-#         return render(request, "venta/tienda.html", {"data": data})
-    
-#     else:
-#         dataError = ({"dataError": "No se encontraron especies de rosa"})
-
-#         return render(request, "venta/tienda.html", {"dataError": dataError})
 def tienda(request):
     # Obtén el token de la API de Trefle
     trefle_api_token = "Sr5y3wPL13rMLu5U4TGYAT-AK8R1ILIHckPS3NbQ2Fs"
