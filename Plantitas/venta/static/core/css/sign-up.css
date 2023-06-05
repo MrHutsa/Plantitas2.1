@@ -1,61 +1,3 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-body
-{
-
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-#nav-bar
-{
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.navbar
-{
-    background-image: linear-gradient(to right, #c0de5d,#b5cc6a,#a9bd68 , #99a66d,#6da67a);
-    padding: 0 !important;
-}
-
-.navbar-brand img
-{
-    height: 80px;
-    padding-left: 20px;
-}
-
-.navbar-nav li
-{
-    padding: 0 10px;
-}
-
-.navbar-nav li a
-{
-    color: #fff !important;
-    font-weight: 600;
-    float: right;
-    text-align: left;
-}
-
-.fa-bars
-{
-    color: #fff;
-    font-size: 30px !important;
-}
-
-.navbar-toggler
-{
-    outline: none !important;
-}
 
 /*-- banner + texto + imagen --*/
 
@@ -188,13 +130,6 @@ h2
 
 }
 
-/*
-.button-container button:hover
-{
-    background-image: linear-gradient(to right, #61045f, #aa076b);
-}
-*/
-
 @media(max-width:600px)
 {
     .container-form
@@ -218,35 +153,16 @@ h2
     {
         justify-content: space-between;
     }
-
-    /*
-    .content::-webkit-scrollbar
-    {
-        width: 0;
-    }
-    */
 }
 
 /*-- seccion "REDES SOCIALES" --*/
 
-.container
-{
-    margin-top: 2%;
-}
-
 #social-media
 {
     background-color: #f8f9fa;
-    padding: 50px 0;
+
 }
-/*-
-#social-media p
-{
-    font-size: 30px;
-    font-weight: 600px;
-    margin-bottom: 4%;
-}
-*/
+
 .ico
 {
     font-size: 400%;
@@ -286,8 +202,6 @@ h2
 {
     padding: 20px;
 }
-
-
 
 .footer-box .fa
 {
